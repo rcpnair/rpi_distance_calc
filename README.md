@@ -2,12 +2,12 @@
 ## Table of Contents
 * Introduction
 * Components
-** Hardware Components
-** Software Components
+  * Hardware Components
+  * Software Components
 * Circuit Diagram
 * Getting Started
-** Prerequisites
-** Installation
+  * Prerequisites
+  * Installation
 * Usage
 * License
 * Acknowledgements
@@ -46,8 +46,8 @@ For detailed information about the GPIO Pins and description, please check [GPIO
 * ECHO -> Pin 18 of RPI through 330Ω Resistor
 * 330Ω -> Pin  6 of RPI through 470Ω Resistor
 
-![rpi_distance_cal_circuit_diagram](https://github.com/rcpnair/rpi_distance_calc/blob/master/rpi_distance_cal_circuit_diagram.jpg)
 
+![rpi_distance_cal_circuit_diagram](https://github.com/rcpnair/rpi_distance_calc/blob/master/rpi_distance_cal_circuit_diagram.jpg)
 ## Getting Started
 
 Follow the following section to configure and start the project
@@ -56,9 +56,9 @@ Follow the following section to configure and start the project
 
 RPI Distane Calculator uses Splunk HTTP Collector to send data data to Splunk and then to analyse and visualize data. 
 
-Follow the [Splunk HEC Documentation] (https://docs.splunk.com/Documentation/Splunk/latest/Data/UsetheHTTPEventCollector) to set up HTTP Event Collector.
+Follow the [Splunk HEC Documentation](https://docs.splunk.com/Documentation/Splunk/latest/Data/UsetheHTTPEventCollector) to set up Splunk HTTP Event Collector.
 
-If Splunk set up is not available , you may switch off Splunk connections by setting following configuration in [config.ini] (https://github.com/rcpnair/rpi_distance_calc/config.ini)
+If Splunk set up is not available , you may switch off Splunk connections by setting following configuration in [config.ini](https://github.com/rcpnair/rpi_distance_calc/config.ini)
 
 ```
 [ splunk ]
@@ -88,4 +88,4 @@ You may override it and supply config from other locations using _--config_ or _
 Distributed under the MIT License. See LICENSE for more information.
 
 Acknowledgements
-Thanks to George Stratcher for an awesome Python Class for [ Splunk HEC ] (https://github.com/georgestarcher/Splunk-Class-httpevent)
+Thanks to George Stratcher for an awesome Python Class for [ Splunk HEC ](https://github.com/georgestarcher/Splunk-Class-httpevent)
