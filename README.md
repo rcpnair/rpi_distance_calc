@@ -82,14 +82,20 @@ disable = True
 
 ### Installation
 
-1. Install Python
-2. Clone the repo
+1. Install Python3
+2. Intall the dependencies
+    ```
+    pip3 install configparser
+    pip3 install argparse
+    pip3 install git+git://github.com/georgestarcher/Splunk-Class-httpevent.git
+    ```
+3. Clone or download the repo to raspberry PI
 ```
 git clone https://github.com/rcpnair/rpi_distance_calc.git
 ```
-3. Configure [config.ini](https://github.com/rcpnair/rpi_distance_calc/blob/master/config.ini)
+4. Configure [config.ini](https://github.com/rcpnair/rpi_distance_calc/blob/master/config.ini)
 
-4. Run the distance.py
+5. Run the distance.py
 Add execution permission to the file and run
 `./distance.py`
 
