@@ -18,6 +18,8 @@ Raspberry PI distance calculator is a simple python project using Raspberry PI t
 It uses GPIO modules of Raspberry PI to trigger an ultrasonic sensor and calculate the difference between send and recieve timestamps.
  </p>
 <p>
+#### Ultra Sonic Sensor
+<p>
 An ultrasonic sensor is an electronic device that measures the distance of a target object by emitting ultrasonic sound waves, and converts the reflected sound into an electrical signal.
 
 In order to calculate the distance between the sensor and the object, the sensor measures the time it takes between the emission of the sound by the transmitter to its contact with the receiver. 
@@ -84,6 +86,7 @@ git clone https://github.com/rcpnair/rpi_distance_calc.git
 3. Configure [config.ini](https://github.com/rcpnair/rpi_distance_calc/config.ini)
 
 4. Run the distance.py
+Add execution permission to the file and run
 `./distance.py`
 
 # Usage
