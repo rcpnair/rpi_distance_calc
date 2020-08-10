@@ -97,4 +97,4 @@ You may override it and supply config from other locations using _--config_ or _
 Distributed under the MIT License. See LICENSE for more information.
 
 # Acknowledgements
-Thanks to George Stratcher for an awesome Python Class for [ Splunk HEC ](https://github.com/georgestarcher/Splunk-Class-httpevent)
+Thanks to [georgestarcher](https://github.com/georgestarcher) for an awesome and easy to use Python Class for [ Splunk HEC ](https://github.com/georgestarcher/Splunk-Class-httpevent)
