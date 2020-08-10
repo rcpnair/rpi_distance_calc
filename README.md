@@ -90,9 +90,9 @@ disable = True
     pip3 install git+git://github.com/georgestarcher/Splunk-Class-httpevent.git
     ```
 3. Clone or download the repo to raspberry PI
-```
-git clone https://github.com/rcpnair/rpi_distance_calc.git
-```
+    ```
+    git clone https://github.com/rcpnair/rpi_distance_calc.git
+    ```
 4. Configure [config.ini](https://github.com/rcpnair/rpi_distance_calc/blob/master/config.ini)
 
 5. Run the distance.py
@@ -100,10 +100,15 @@ Add execution permission to the file and run
 `./distance.py`
 
 # Usage
-Program uses config.ini configuration file to get all required parameters. If any of the parameters are not available, it uses the default values
+Program uses config.ini configuration file to get all required parameters.
+<p>
+If any of the parameters are not available, it uses the default values
+</p>
+<p>
 By default, it looks in the current working directory of the program for config.ini file
+</p>
+<p>
 You may override it and supply config from other locations using _--config_ or _-c_ parametert from the command line.
-
 `./distance.py --config /path/to/config_file_in_ini_format/`
 
 # License
