@@ -13,11 +13,11 @@
 * [Acknowledgements](#acknowledgements)
 
 ## Introduction
-Raspberry PI distance calculator is a simple python project using Raspberry PI that can be used to measure distance between two points and forward the events to Splunk for further analysis. 
 <p>
-It uses GPIO modules of Raspberry PI to trigger an ultrasonic sensor and calculate the difference between send and recieve timestamps.
- </p>
-<p>
+Raspberry PI distance calculator is a simple python project that can be used to measure distance between two points and forward the events to Splunk for further analysis. 
+</p>
+
+It uses [GPIO](https://www.raspberrypi.org/documentation/usage/gpio/) modules of Raspberry PI to trigger an ultrasonic sensor and calculate the difference between send and recieve timestamps.
 
 **Ultra Sonic Sensor**
 
@@ -69,7 +69,7 @@ Follow the steps to configure and start the project.
 
 ### Prerequisites
 
-RPI Distane Calculator uses Splunk HTTP Collector to send data data to Splunk and then to analyse and visualize data. 
+RPI Distance Calculator uses Splunk HTTP Collector to send data data to Splunk and then to analyse and visualize data. 
 
 Follow the [Splunk HEC Documentation](https://docs.splunk.com/Documentation/Splunk/latest/Data/UsetheHTTPEventCollector) to set up Splunk HTTP Event Collector.
 
@@ -106,9 +106,11 @@ If any of the parameters are not available, it uses the default values
 </p>
 <p>
 By default, it looks in the current working directory of the program for config.ini file
-</p>
+ </p>
 <p>
 You may override it and supply config from other locations using _--config_ or _-c_ parametert from the command line.
+ </p>
+ 
 `./distance.py --config /path/to/config_file_in_ini_format/`
 
 # License
