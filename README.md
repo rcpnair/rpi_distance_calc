@@ -1,25 +1,30 @@
 # Raspberry PI Distance Calculator
 ## Table of Contents
-* Introduction
-* Components
-  * Hardware Components
-  * Software Components
-* Circuit Diagram
-* Getting Started
-  * Prerequisites
-  * Installation
-* Usage
-* License
-* Acknowledgements
+* [Introduction](#introduction)
+* [Components](#components)
+  * [Hardware Components](#hardware-components)
+  * [Software Components](#software-components)
+* [Circuit Diagram](#circuit-diagram)
+* [Getting Started](#getting-started)
+  * [Prerequisites](#prerequisites)
+  * [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Acknowledgements](#acknowledgements)
 
 ## Introduction
 Raspberry PI distance calculator is a simple python project using Raspberry PI that can be used to measure distance between two points and forward the events to Splunk for further analysis. 
+<p>
 It uses GPIO modules of Raspberry PI to trigger an ultrasonic sensor and calculate the difference between send and recieve timestamps.
-
+ </p>
+<p>
 An ultrasonic sensor is an electronic device that measures the distance of a target object by emitting ultrasonic sound waves, and converts the reflected sound into an electrical signal.
 
-In order to calculate the distance between the sensor and the object, the sensor measures the time it takes between the emission of the sound by the transmitter to its contact with the receiver. The formula for this calculation is D = ½ T x C (where D is the distance, T is the time, and C is the speed of sound ~ 343 meters/second).
-
+In order to calculate the distance between the sensor and the object, the sensor measures the time it takes between the emission of the sound by the transmitter to its contact with the receiver. 
+</p>
+<p>
+ The formula for this calculation is D = ½ T x C (where D is the distance, T is the time, and C is the speed of sound ~ 343 meters/second).
+</p>
 Following acronyms will be used from here onwards
 * RPI = Raspberry PI
 * GPIO = general-purpose input/output
