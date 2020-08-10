@@ -13,8 +13,8 @@ import splunk_hec as splunk
 
 def getSplunkConn():
 
-    enable = config.getVal("splunk", "enable", True, True)
-    if not enable:
+    disable = config.getVal("splunk", "disable", False, True)
+    if disable:
         log.warning(
             "Splunk is disabled in the config, events will not be forwarded")
         return None, None

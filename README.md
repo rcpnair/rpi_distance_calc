@@ -77,7 +77,7 @@ If Splunk set up is not available , you may switch off Splunk connections by set
 
 ```
 [ splunk ]
-enable = False
+disable = True
 ```
 
 ### Installation
