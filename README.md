@@ -13,11 +13,11 @@
 * [Acknowledgements](#acknowledgements)
 
 ## Introduction
-Raspberry PI distance calculator is a simple python project using Raspberry PI that can be used to measure distance between two points and forward the events to Splunk for further analysis. 
 <p>
-It uses GPIO modules of Raspberry PI to trigger an ultrasonic sensor and calculate the difference between send and recieve timestamps.
- </p>
-<p>
+Raspberry PI distance calculator is a simple python project that can be used to measure distance between two points and forward the events to Splunk for further analysis. 
+</p>
+
+It uses [GPIO](https://www.raspberrypi.org/documentation/usage/gpio/) modules of Raspberry PI to trigger an ultrasonic sensor and calculate the difference between send and recieve timestamps.
 
 **Ultra Sonic Sensor**
 
@@ -65,39 +65,52 @@ For detailed information about the GPIO Pins and description, please check [GPIO
 ![rpi_distance_cal_circuit_diagram](https://github.com/rcpnair/rpi_distance_calc/blob/master/rpi_distance_cal_circuit_diagram.jpg)
 ## Getting Started
 
-Follow the following section to configure and start the project
+Follow the steps to configure and start the project.
 
 ### Prerequisites
 
-RPI Distane Calculator uses Splunk HTTP Collector to send data data to Splunk and then to analyse and visualize data. 
+RPI Distance Calculator uses Splunk HTTP Collector to send data data to Splunk and then to analyse and visualize data. 
 
 Follow the [Splunk HEC Documentation](https://docs.splunk.com/Documentation/Splunk/latest/Data/UsetheHTTPEventCollector) to set up Splunk HTTP Event Collector.
 
-If Splunk set up is not available , you may switch off Splunk connections by setting following configuration in [config.ini](https://github.com/rcpnair/rpi_distance_calc/config.ini)
+If Splunk set up is not available , you may switch off Splunk connections by setting following configuration in [config.ini](https://github.com/rcpnair/rpi_distance_calc/blob/master/config.ini)
 
 ```
 [ splunk ]
-enable = False
+disable = True
 ```
 
 ### Installation
 
-1. Install Python
-2. Clone the repo
-```
-git clone https://github.com/rcpnair/rpi_distance_calc.git
-```
-3. Configure [config.ini](https://github.com/rcpnair/rpi_distance_calc/config.ini)
+1. Install Python3
+2. Intall the dependencies
+    ```
+    pip3 install configparser
+    pip3 install argparse
+    pip3 install git+git://github.com/georgestarcher/Splunk-Class-httpevent.git
+    ```
+3. Clone or download the repo to raspberry PI
+    ```
+    git clone https://github.com/rcpnair/rpi_distance_calc.git
+    ```
+4. Configure [config.ini](https://github.com/rcpnair/rpi_distance_calc/blob/master/config.ini)
 
-4. Run the distance.py
+5. Run the distance.py
 Add execution permission to the file and run
 `./distance.py`
 
 # Usage
-Program uses config.ini configuration file to get all required parameters. If any of the parameters are not available, it uses the default values
+Program uses config.ini configuration file to get all required parameters.
+<p>
+If any of the parameters are not available, it uses the default values
+</p>
+<p>
 By default, it looks in the current working directory of the program for config.ini file
+ </p>
+<p>
 You may override it and supply config from other locations using _--config_ or _-c_ parametert from the command line.
-
+ </p>
+ 
 `./distance.py --config /path/to/config_file_in_ini_format/`
 
 # License
