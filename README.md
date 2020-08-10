@@ -87,5 +87,5 @@ You may override it and supply config from other locations using _--config_ or _
 # License
 Distributed under the MIT License. See LICENSE for more information.
 
-Acknowledgements
+# Acknowledgements
 Thanks to George Stratcher for an awesome Python Class for [ Splunk HEC ](https://github.com/georgestarcher/Splunk-Class-httpevent)
