@@ -81,7 +81,7 @@ enable = False
 ```
 git clone https://github.com/rcpnair/rpi_distance_calc.git
 ```
-3. Configure [config.ini] (https://github.com/rcpnair/rpi_distance_calc/config.ini)
+3. Configure [config.ini](https://github.com/rcpnair/rpi_distance_calc/config.ini)
 
 4. Run the distance.py
 `./distance.py`
