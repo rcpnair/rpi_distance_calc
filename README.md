@@ -65,7 +65,7 @@ For detailed information about the GPIO Pins and description, please check [GPIO
 ![rpi_distance_cal_circuit_diagram](https://github.com/rcpnair/rpi_distance_calc/blob/master/rpi_distance_cal_circuit_diagram.jpg)
 ## Getting Started
 
-Follow the following section to configure and start the project
+Follow the below steps to configure and start the project.
 
 ### Prerequisites
 
@@ -73,7 +73,7 @@ RPI Distane Calculator uses Splunk HTTP Collector to send data data to Splunk an
 
 Follow the [Splunk HEC Documentation](https://docs.splunk.com/Documentation/Splunk/latest/Data/UsetheHTTPEventCollector) to set up Splunk HTTP Event Collector.
 
-If Splunk set up is not available , you may switch off Splunk connections by setting following configuration in [config.ini](https://github.com/rcpnair/rpi_distance_calc/config.ini)
+If Splunk set up is not available , you may switch off Splunk connections by setting following configuration in [config.ini](https://github.com/rcpnair/rpi_distance_calc/blob/master/config.ini)
 
 ```
 [ splunk ]
@@ -87,7 +87,7 @@ enable = False
 ```
 git clone https://github.com/rcpnair/rpi_distance_calc.git
 ```
-3. Configure [config.ini](https://github.com/rcpnair/rpi_distance_calc/config.ini)
+3. Configure [config.ini](https://github.com/rcpnair/rpi_distance_calc/blob/master/config.ini)
 
 4. Run the distance.py
 Add execution permission to the file and run
