@@ -9,6 +9,7 @@
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
 * [Usage](#usage)
+* [Use case 1 - Connected furniture](#use-case-1---connected-furniture)
 * [License](#license)
 * [Acknowledgements](#acknowledgements)
 
@@ -112,6 +113,18 @@ You may override it and supply config from other locations using _--config_ or _
  </p>
  
 `./distance.py --config /path/to/config_file_in_ini_format/`
+# Use case 1 - Connected furniture
+<p>
+ Using the distance calculator, height of an adjustable table can be measured and send data to splunk for further analysis.
+ 
+ ## Sample Dashboards
+ 
+![splunk_dashboard_amber](https://github.com/rcpnair/rpi_distance_calc/blob/master/images/splunk_dashboard_amber.jpg)
+
+![splunk_dashboard_red](https://github.com/rcpnair/rpi_distance_calc/blob/master/images/splunk_dashboard_red.jpg)
+
+## Sample Alert
+
 
 # License
 Distributed under the MIT License. See LICENSE for more information.
