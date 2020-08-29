@@ -13,7 +13,7 @@ import splunk_hec as splunk
 
 def getSplunkConn():
 
-    disable = config.getVal("splunk", "disable", False, True)
+    disable = config.getValBool("splunk", "disable", False)
     if disable:
         log.warning(
             "Splunk is disabled in the config, events will not be forwarded")
@@ -22,7 +22,7 @@ def getSplunkConn():
     host = config.getVal("splunk", "host", "localhost")
     port = config.getVal("splunk", "port", "8088")
     token = config.getVal("splunk", "token", "HTTP-EVENT-COLLECTOR-TOKEN")
-    secure = config.getVal("splunk", "secure_host", False, True)  # http/https
+    secure = config.getValBool("splunk", "secure_host", False)  # http/https
 
     index = config.getVal("splunk", "index", "main")
     source = config.getVal("splunk", "source", "raspberry")
@@ -62,7 +62,7 @@ fName = "config.ini"
 localConf = os.path.join(pwd, fName)
 
 # Read and process args from command line
-# If no config file provided, default one will be picked up
+# If no config file provided, default one will be used
 parser = ArgumentParser()
 parser.add_argument(
     "-c",
@@ -83,8 +83,8 @@ config.readConf(args.confFile)
 
 log.setLevel(config.getVal("log", "level", "INFO"))
 
-signalTimeout = config.getVal("rpi", "signal_timeout", 3)
-interval = config.getVal("rpi", "interval", 1)
+signalTimeout = config.getValInt("rpi", "signal_timeout", 3)
+interval = config.getValInt("rpi", "interval", 1)
 doSplunk = True
 
 # Connect to Splunk HTTP event collector
@@ -97,7 +97,6 @@ if hec is None:
 
 else:
     hec.popNullFields = True
-    # set logging to DEBUG for example
     hec.log.setLevel(config.getVal("log", "level", "INFO"))
 
 # main
