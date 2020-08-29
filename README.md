@@ -123,8 +123,6 @@ You may override it and supply config from other locations using _--config_ or _
 
 ![splunk_dashboard_red](https://github.com/rcpnair/rpi_distance_calc/blob/master/images/splunk_dashboard_red.jpg)
 
-## Sample Alert
-
 
 # License
 Distributed under the MIT License. See LICENSE for more information.
