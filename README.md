@@ -62,7 +62,7 @@ For detailed information about the GPIO Pins and description, please check [GPIO
 * 330Ω -> Pin  6 of RPI through 470Ω Resistor
 
 
-![rpi_distance_cal_circuit_diagram](https://github.com/rcpnair/rpi_distance_calc/blob/master/rpi_distance_cal_circuit_diagram.jpg)
+![rpi_distance_cal_circuit_diagram](https://github.com/rcpnair/rpi_distance_calc/blob/master/images/rpi_distance_cal_circuit_diagram.jpg)
 ## Getting Started
 
 Follow the steps to configure and start the project.
